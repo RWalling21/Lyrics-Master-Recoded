@@ -14,9 +14,6 @@ def scrape(artist):
 
     try:
         songs = genius.search_artist(artist)
-        songs.save_lyrics()
+        
     except:
         raise("Error: Could not find artist")
-
-if __name__ == '__main__':
-    scrape("Homeshake")
