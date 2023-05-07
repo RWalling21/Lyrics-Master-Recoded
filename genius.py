@@ -5,10 +5,8 @@ rwalling115@gmail.com
 """
 
 from mailbox import ExternalClashError
-import config
+import scraper.config as config
 
-# Handles scraping the Genius API 
-from lyricsgenius import Genius
 
 def scrape(artist_name, count):
     genius = Genius(config.GENIUS_ACCESS_TOKEN)
